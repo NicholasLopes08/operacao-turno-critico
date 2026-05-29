@@ -24,3 +24,19 @@ def buscar_entregador(id_entregador):
         if entregador["id"] == id_entregador:
             return entregador
     return None
+
+def contar_pedidos_ativos(entregador):
+    total = 0
+    for id_pedido in entregador["pedidos_associados"]:
+        pedido = buscar_pedido(id_pedido)
+        if pedido != None:
+            if pedido["status"] == "Pendente" or pedido["status"] == "Em Rota":
+                total = total + 1
+    return total
+
+def cadastrar_pedido():
+    print("\n--- CADASTRO DE PEDIDO ---")
+
+    id_pedido = input("ID do pedido (ex: A1234): ")
+    id_pedido = id_pedido.strip()
+    id_pedido = id_pedido.upper()
