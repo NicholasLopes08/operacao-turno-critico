@@ -13,3 +13,10 @@ def validar_id_pedido(id_pedido):
         return False
     return True
 
+def buscar_pedido(id_pedido):
+    for pedido in pedidos:
+        if pedido["id"] == id_pedido:
+            return pedido
+    return None
+
+
