@@ -1,3 +1,5 @@
+from dados import pedidos, entregadores
+
 def validar_id_pedido(id_pedido):
     if len(id_pedido) != 5:
         return False
@@ -33,10 +35,3 @@ def contar_pedidos_ativos(entregador):
             if pedido["status"] == "Pendente" or pedido["status"] == "Em Rota":
                 total = total + 1
     return total
-
-def cadastrar_pedido():
-    print("\n--- CADASTRO DE PEDIDO ---")
-
-    id_pedido = input("ID do pedido (ex: A1234): ")
-    id_pedido = id_pedido.strip()
-    id_pedido = id_pedido.upper()
