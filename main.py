@@ -4,8 +4,7 @@
 # ============================================
 
 # Listas globais do sistema
-pedidos = []
-entregadores = []
+
 
 
 # Verifica se o ID do pedido tem 1 letra + 4 numeros (ex: A1234)
