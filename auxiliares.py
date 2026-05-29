@@ -19,4 +19,8 @@ def buscar_pedido(id_pedido):
             return pedido
     return None
 
-
+def buscar_entregador(id_entregador):
+    for entregador in entregadores:
+        if entregador["id"] == id_entregador:
+            return entregador
+    return None
