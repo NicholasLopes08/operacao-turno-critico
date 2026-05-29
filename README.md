@@ -26,6 +26,6 @@ O objetivo do projeto é organizar e controlar informações relacionadas aos tu
 
 ## Integrantes
 
-- Nicholas Lopes
-- Matheus Schiavinato
 - Felipe Laiko
+- Matheus Schiavinato
+- Nicholas Lopes
